@@ -1,0 +1,12 @@
+{# magic_word.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<body style=" background-color: pink;">
+<main style=" background-color: black; color: pink; padding: 10px;">
+    <h1>Palabra Máxica</h1>
+    <p>O xogador máxico asociado ao número {{ magicNumber }} é: <strong>{{ magicWord }}</strong></p>
+    <h3>Conoce a descripción do teu xogador máxico: <a style="text-decoration: none; background-color: pink; color: black;" href="{{ path('dictionary', {'word': magicWord}) }}">Pulsa aquí</a></h3>
+    </main>
+    </body>
+{% endblock %}

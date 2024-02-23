@@ -1,0 +1,13 @@
+{# magic_number.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <body style=" background-color: pink;">
+    <main style=" background-color: black; color: pink; padding: 10px;">
+    <h1>Número Máxico</h1>
+    <p>O teu número máxico é: <strong>{{ magicNumber }}</strong></p>
+    <h3>Conoce o teu xogador máxico: <a style="text-decoration: none; background-color: pink; color: black;" href="{{ path('magic_word', {'number': magicNumber}) }}">Pulsa aquí</a></h3>
+    
+    </main>
+    </body>
+{% endblock %}
